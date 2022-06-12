@@ -1,59 +1,50 @@
 {
   "images" : [
     {
-      "filename" : "Untitled-1.png",
+      "filename" : "track.png",
       "idiom" : "universal",
       "resizing" : {
         "cap-insets" : {
-          "bottom" : 4,
-          "left" : 4,
-          "right" : 4,
-          "top" : 4
+          "left" : 6,
+          "right" : 6
         },
         "center" : {
-          "height" : 1,
           "mode" : "tile",
           "width" : 1
         },
-        "mode" : "9-part"
+        "mode" : "3-part-horizontal"
       },
       "scale" : "1x"
     },
     {
-      "filename" : "Untitled-1@2x.png",
+      "filename" : "track@2x.png",
       "idiom" : "universal",
       "resizing" : {
         "cap-insets" : {
-          "bottom" : 8,
-          "left" : 8,
-          "right" : 8,
-          "top" : 8
+          "left" : 12,
+          "right" : 12
         },
         "center" : {
-          "height" : 1,
           "mode" : "tile",
           "width" : 1
         },
-        "mode" : "9-part"
+        "mode" : "3-part-horizontal"
       },
       "scale" : "2x"
     },
     {
-      "filename" : "Untitled-1@3x.png",
+      "filename" : "track@3x.png",
       "idiom" : "universal",
       "resizing" : {
         "cap-insets" : {
-          "bottom" : 12,
-          "left" : 12,
-          "right" : 12,
-          "top" : 12
+          "left" : 18,
+          "right" : 18
         },
         "center" : {
-          "height" : 1,
           "mode" : "tile",
           "width" : 1
         },
-        "mode" : "9-part"
+        "mode" : "3-part-horizontal"
       },
       "scale" : "3x"
     }
@@ -61,8 +52,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }
