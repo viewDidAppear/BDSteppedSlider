@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BDSteppedSlider'
-  s.version  = '0.0.3'
+  s.version  = '0.0.4'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'A classic-style slider, with value snap and haptic feedback.'
   s.homepage = 'https://github.com/viewDidAppear/BDSteppedSlider'
