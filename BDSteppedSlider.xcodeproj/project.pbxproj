@@ -42,8 +42,6 @@
 		4478D178284BA5D5005F2965 = {
 			isa = PBXGroup;
 			children = (
-				4478D19B2856185D005F2965 /* Demo */,
-				4478D19A28561852005F2965 /* Supporting */,
 				4478D183284BA5D5005F2965 /* BDSteppedSlider */,
 				4478D182284BA5D5005F2965 /* Products */,
 			);
@@ -60,6 +58,8 @@
 		4478D183284BA5D5005F2965 /* BDSteppedSlider */ = {
 			isa = PBXGroup;
 			children = (
+				4478D19B2856185D005F2965 /* Demo */,
+				4478D19A28561852005F2965 /* Supporting */,
 				4478D198284BA5E9005F2965 /* BDSteppedSlider.swift */,
 			);
 			path = BDSteppedSlider;
@@ -309,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3K6G4SWK2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/Supporting/Info.plist";
+				INFOPLIST_FILE = BDSteppedSlider/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3K6G4SWK2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/Supporting/Info.plist";
+				INFOPLIST_FILE = BDSteppedSlider/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
