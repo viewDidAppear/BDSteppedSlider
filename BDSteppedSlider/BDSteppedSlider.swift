@@ -332,12 +332,13 @@ public final class BDSteppedSlider: UISlider {
 
 	// MARK: - Interface Builder Hook
 
-	#if TARGET_INTERFACE_BUILDER
+#if TARGET_INTERFACE_BUILDER
 
 	public override func prepareForInterfaceBuilder() {
 		setNeedsDisplay()
 	}
 
-	#endif
+#endif
 
 }
+
