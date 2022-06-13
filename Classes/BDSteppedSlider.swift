@@ -30,9 +30,9 @@ public final class BDSteppedSlider: UISlider {
 		var knobImage: UIImage {
 			switch self {
 				case .modern:
-					return UIImage(named: "thumb_modern_img.png")!
+					return ImagesHelper.thumb_modern_img
 				case .classic:
-					return UIImage(named: "thumb_classsic_img.png")!
+					return ImagesHelper.thumb_classic_img
 			}
 		}
 
@@ -41,7 +41,7 @@ public final class BDSteppedSlider: UISlider {
 				case .modern:
 					return nil
 				case .classic:
-					return UIImage(named: "min_track_img.png")!
+					return ImagesHelper.min_track_img
 			}
 		}
 
@@ -50,7 +50,7 @@ public final class BDSteppedSlider: UISlider {
 				case .modern:
 					return nil
 				case .classic:
-					return UIImage(named: "max_track_img.png")!
+					return ImagesHelper.max_track_img
 			}
 		}
 
@@ -344,10 +344,22 @@ public final class BDSteppedSlider: UISlider {
 
 internal class ImagesHelper: NSObject {
 	private static func imageFor(name imageName: String) -> UIImage {
-		UIImage(named: imageName, in: Bundle.init(for: ImagesHelper.classForCoder()), compatibleWith: nil)!
+		UIImage(named: imageName, in: Bundle(for: BDSteppedSlider.self), compatibleWith: nil)!
 	}
 
-	public static var min_track_image: UIImage {
+	public static var thumb_classic_img: UIImage {
 		imageFor(name: #function)
+	}
+
+	public static var thumb_modern_img: UIImage {
+		imageFor(name: #function)
+	}
+
+	public static var max_track_img: UIImage {
+		imageFor(name: #function).resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6), resizingMode: .tile)
+	}
+
+	public static var min_track_img: UIImage {
+		imageFor(name: #function).resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6), resizingMode: .tile)
 	}
 }
