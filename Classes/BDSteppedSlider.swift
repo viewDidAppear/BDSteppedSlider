@@ -30,9 +30,9 @@ public final class BDSteppedSlider: UISlider {
 		var knobImage: UIImage {
 			switch self {
 				case .modern:
-					return #imageLiteral(resourceName: "thumb_modern")
+					return UIImage(named: "thumb_modern_img.png")!
 				case .classic:
-					return #imageLiteral(resourceName: "thumb_classic")
+					return UIImage(named: "thumb_classsic_img.png")!
 			}
 		}
 
@@ -41,7 +41,7 @@ public final class BDSteppedSlider: UISlider {
 				case .modern:
 					return nil
 				case .classic:
-					return #imageLiteral(resourceName: "min_track_asset")
+					return UIImage(named: "min_track_img.png")!
 			}
 		}
 
@@ -50,7 +50,7 @@ public final class BDSteppedSlider: UISlider {
 				case .modern:
 					return nil
 				case .classic:
-					return #imageLiteral(resourceName: "max_track_asset")
+					return UIImage(named: "max_track_img.png")!
 			}
 		}
 
@@ -342,3 +342,18 @@ public final class BDSteppedSlider: UISlider {
 
 }
 
+internal struct ImagesHelper {
+	private static var podsBundle: Bundle {
+		let bundle = Bundle(for: BDSteppedSlider.classForCoder())
+		return Bundle(url: bundle.url(forResource: "Cunts",
+									  withExtension: "bundle")!)!
+	}
+
+	private static func imageFor(name imageName: String) -> UIImage {
+		return UIImage.init(named: imageName, in: podsBundle, compatibleWith: nil)!
+	}
+
+	public static var min_track_image: UIImage {
+		imageFor(name: #function)
+	}
+}
