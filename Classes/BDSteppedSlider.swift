@@ -342,15 +342,9 @@ public final class BDSteppedSlider: UISlider {
 
 }
 
-internal struct ImagesHelper {
-	private static var podsBundle: Bundle {
-		let bundle = Bundle(for: BDSteppedSlider.classForCoder())
-		return Bundle(url: bundle.url(forResource: "Cunts",
-									  withExtension: "bundle")!)!
-	}
-
+internal class ImagesHelper: NSObject {
 	private static func imageFor(name imageName: String) -> UIImage {
-		return UIImage.init(named: imageName, in: podsBundle, compatibleWith: nil)!
+		UIImage(named: imageName, in: Bundle.init(for: ImagesHelper.classForCoder()), compatibleWith: nil)!
 	}
 
 	public static var min_track_image: UIImage {
